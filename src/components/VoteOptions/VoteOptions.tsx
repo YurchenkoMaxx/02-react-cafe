@@ -4,7 +4,7 @@ import type { VoteType } from '../../types/votes';
 interface VoteOptionsProps {
   onVote: (type: VoteType) => void;
   onReset: () => void;
-  canReset?: boolean;
+  canReset: boolean;
 }
 
 export default function VoteOptions({ onVote, onReset, canReset }:  VoteOptionsProps) {
